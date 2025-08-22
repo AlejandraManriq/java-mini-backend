@@ -1,21 +1,26 @@
-# Backend Demo — Spring Boot (Products API)
+# Backend Demo – Spring Boot (Products API)
 
-> **Objetivo:** REST API mínima de productos para validar endpoints con Postman.
+## 📖 Descripción
+API REST mínima de productos desarrollada con **Spring Boot**.  
+Sirve como base para pruebas de API con Postman o integración en pipelines de QA.  
+Incluye endpoints básicos para listar y consultar productos.
 
-## Requisitos
+---
+
+## 📂 Endpoints
+- `GET /api/products` → devuelve la lista completa de productos.  
+- `GET /api/products/{id}` → devuelve un producto específico por su id.  
+
+---
+
+## 🛠️ Herramientas
 - Java 17+
-- Maven 3.9+
+- Spring Boot
+- Maven
+- Postman (para pruebas manuales)
 
-## Ejecutar
+---
+
+## 🚀 Cómo ejecutar
 ```bash
 mvn spring-boot:run
-# GET http://localhost:8080/api/products
-# GET http://localhost:8080/api/products/1
-```
-
-## Endpoints
-- `GET /api/products` — lista de productos
-- `GET /api/products/{id}` — detalle por id
-
-## Notas
-- Datos en memoria (lista estática). Ideal para pruebas de API.
